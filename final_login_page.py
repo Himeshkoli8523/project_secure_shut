@@ -4,19 +4,11 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.label import Label
 from kivy.uix.button import Button
+import keys
 import requests
-import firebase_admin
-import firebase
-from firebase_admin import credentials
 
 
 class MyApp(App):
-    
-    firebase_url = "https://shut-6276a-default-rtdb.firebaseio.com/.json"
-    firebase = firebase.FirebaseApplication(firebase_url, None)
-    my_api_key = 'AIzaSyDl_ex7CRrUXRfncH90qGcZM1qLyTFORJo'
-    cred = credentials.Certificate("path/to/serviceAccountKey.json")
-    firebase_admin.initialize_app(cred)
 
     def build(self):
         return MyBoxLayout()
@@ -85,17 +77,13 @@ class MyBoxLayout(BoxLayout):
         email = self.email_input.text
         password = self.password_input.text
         
-        # Here, you would send a request to Firebase Authentication endpoint for sign-in
-        # You can use the 'requests' library to make HTTP POST request to Firebase Authentication REST API
-        # Example:
-        response = requests.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=my_api_key', data={'email': email, 'password': password, 'returnSecureToken': True})
-        # You need to replace 'YOUR_API_KEY' with your Firebase project's API key
+        try:
+            user = self.firebase.authentication.sign_in_with_password(email,password)
+            print(f"Successfully logged in: {user}")
+        except Exception as e :
+            print(f"Login failed : {e}")
+            
         
-        # Example response handling:
-        if response.status_code == 200:
-            print("Login successful:", response.json())
-        else:
-            print("Login failed:", response.json())
 
     def signup(self, instance):
         email = self.email_input.text

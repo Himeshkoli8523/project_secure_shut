@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "827204186735",
+    "firebase_url": "https://shut-6276a-default-rtdb.firebaseio.com",
+    "project_id": "shut-6276a",
+    "storage_bucket": "shut-6276a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827204186735:android:ec9282b7d2f345e925139a",
+        "android_client_info": {
+          "package_name": "com.secureshut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLwD4WAEJe-hqcKA2oGzdKYFbr0EmuopU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

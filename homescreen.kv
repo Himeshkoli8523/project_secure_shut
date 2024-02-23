@@ -1,0 +1,42 @@
+<Homescreen>:
+    orientation: 'vertical'
+    padding: dp(10)
+
+    GridLayout:
+        cols: 1
+        spacing: dp(10)
+        size_hint_y: None
+        height: self.minimum_height
+
+        Button:
+            text: 'Fake Shutdown'
+            size_hint_y: None
+            height: dp(50)
+
+        Button:
+            text: 'Add Contacts'
+            size_hint_y: None
+            height: dp(50)
+
+        Button:
+            text: 'Pictures'
+            size_hint_y: None
+            height: dp(50)
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.1
+
+        Button:
+            text: 'Home'
+            size_hint_x: 0.3
+
+        Button:
+            text: 'Get started Logo'
+            size_hint_x: 0.4
+
+        Button:
+            text: 'Settings'
+            size_hint_x: 0.3
+            on_release:
+                change_screen("settingsscreen")

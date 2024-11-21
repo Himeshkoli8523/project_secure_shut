@@ -1,14 +1,14 @@
-1. Home Screen
+## 1. Home Screen
 A modern and clean interface with large, clickable buttons:
 Secure Shut: The main functionality for securing your device (upcoming feature).
 Add Contacts: Placeholder for managing secure contacts (navigation enabled).
 Pictures: Placeholder for secure picture handling (navigation enabled).
-2. Bottom Navigation Bar
+## 2. Bottom Navigation Bar
 A consistent navigation bar with three primary sections:
 Home: Navigate to the main screen.
 Permissions: Manage and request device permissions.
 Settings: Manage application settings (to be fully developed).
-3. Permissions Management Screen
+## 3. Permissions Management Screen
 A dedicated screen for managing device permissions.
 Permissions included:
 Camera: Manage camera access for security.
@@ -19,7 +19,7 @@ Microphone: Placeholder for managing microphone access.
 Device Admin: Placeholder for administrative permissions.
 A dialog box is displayed at the top with a message:
 "Please provide necessary permissions to Secure your device."
-4. Theming and Design
+## 4. Theming and Design
 Consistent light-themed design using a gray background with white, rounded rectangular buttons.
 Icons and labels for clear navigation and interaction.
 How to Use

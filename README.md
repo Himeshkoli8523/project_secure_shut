@@ -22,8 +22,8 @@ A dialog box is displayed at the top with a message:
 ## 4. Theming and Design
 Consistent light-themed design using a gray background with white, rounded rectangular buttons.
 Icons and labels for clear navigation and interaction.
-How to Use
-For Non-Technical Users:
+# How to Use
+
 Navigation:
 Use the bottom navigation bar to switch between Home, Permissions, and Settings.
 Grant Permissions:
@@ -43,7 +43,6 @@ UI designed with consistent padding, spacing, and theming.
 Integrations:
 Permission handling logic can be expanded with PermissionHandler for actions like request() and check() for each permission.
 Next Steps
-Non-Technical Roadmap:
 
 Add functionality for managing secure contacts and pictures.
 Introduce guides for users on granting specific permissions.
